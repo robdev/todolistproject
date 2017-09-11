@@ -18,4 +18,11 @@ $("input[type='text']").keypress(function(evnt){
     //create a new li and add to ul
     $("ul").append("<li><span><i class='fa fa-trash' aria-hidden='true'></i></span> "+todoText+"</li>")
   }
+});
+
+$(document).ready(function() {
+  $("input[type='text']").fadeOut(0);
+})
+$(".fa-plus-circle").click(function(){
+  $("input[type='text']").fadeToggle();
 })
